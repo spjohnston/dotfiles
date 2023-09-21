@@ -71,9 +71,8 @@ brew install ffmpeg
 # json stuff
 brew install jq gron
 
-brew install ncdu # find where your diskspace went
 
-
-brew install scrcpy # control/view android phone from PC. amazing
-brew install youtube-dl
+# meh, maybe later...
+#brew install ncdu # find where your diskspace went
+# brew install youtube-dl
 

@@ -12,6 +12,11 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
 	cherrypick = cherry-pick
 	cp = cherry-pick
+    diffbranch = !"git diff $(git merge-base HEAD origin/master)"
+	track = git push -u origin HEAD
+  	gone = ! "git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
+	find = log --pretty=format:"%C(yellow)%h%C(magenta)%x09%ad%x09%C(green)%s" --grep
+	commits-since ="!f() { git log $1..HEAD --pretty=format:'%h%x09%an%x09%ad%x09%s'; }; f"
 
 	# If you do `git git status`, this sorts out the duplicate
 	git = !exec git
@@ -57,6 +62,8 @@
 	precomposeUnicode = true
 	# https://github.com/dandavison/delta
 	pager = delta
+    editor = code
+	editor = vim
 
 [delta]
 	max-line-length = 700
