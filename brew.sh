@@ -12,14 +12,14 @@ brew install moreutils
 # GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 brew install findutils
 # GNU `sed`
-brew install gnu-sed
+# brew install gnu-sed
 
 
 # Updated shells
 # Note: don’t forget to add `/usr/local/bin/<EACHSHELL>` to `/etc/shells` before running `chsh`.
-brew install fish
+# brew install fish
 
-brew install bash-completion
+# brew install bash-completion
 
 
 # Install wget

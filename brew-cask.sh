@@ -13,7 +13,7 @@ brew install --cask 1password           # password management
 brew install --cask setapp              # app store
 
 # dev
-brew install --cask iterm2              # terminal
+brew install --cask warp              	# terminal
 brew install --cask visual-studio-code  # code editor
 
 
