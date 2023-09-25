@@ -35,7 +35,12 @@ alias lsd='ls -l | grep "^d"' # only directories
 #    `la` defined in .functions
 ###
 
-
+###
+# Terraform Stuff
+alias tf="terraform"
+alias tfi="terraform init"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
 
 ###
 # GIT STUFF
